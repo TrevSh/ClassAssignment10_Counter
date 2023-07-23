@@ -30,7 +30,7 @@ int main()
 
     std::cout << "\tCounting with Null Statement\n";
     int count = 0;
-    for ( ;count < 10; ) {
+    for ( ;count < 10; ) {                                  //This works because i defined the count variable before I put it into the for loop.
         std::cout << count << " ";
         ++count;
         if (count == 10) {
@@ -44,7 +44,7 @@ int main()
         for (int j = 0; j < COLUMNS; j++) {
             std::cout << i << "," << j << " ";
         }
-        if (count == 10) {
+        if (COLUMNS == 3) {
             std::cout << "\n\n";
         }
     }
